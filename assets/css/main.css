@@ -1,0 +1,384 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  }
+  html {
+  font-family: "Tahoma", serif, sans-serif;
+  }
+
+  .header{
+    height: 850px;
+    background: url('../img/bg.png') no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .container{
+    width: 1200px;
+    margin: auto;
+  }
+.logo-wrapper{
+float: left;
+height: 40px;
+font-size: 40px;
+}
+.logo-white{
+font-size: 45px;
+color: #fff;
+text-transform: uppercase;
+text-shadow: 2px 2px 2px #696969;
+}
+.logo-color{
+font-size: 45px;
+text-transform: uppercase;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#755882+0,33263a+100 */
+background: #755882; /* Old browsers */
+background: -moz-linear-gradient(top, #755882 0%, #33263a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #755882 0%,#33263a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #755882 0%,#33263a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#755882', endColorstr='#33263a',GradientType=0 ); /* IE6-9 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+ }
+ .header-nav{
+ height: 280px;
+ padding-top: 70px;
+ }
+.header-nav_wrapper{
+  float: right;
+  height: 40px;
+}
+.header-nav_item {
+float:left;
+margin-left: 25px;
+padding-top: 15px;
+}
+.header-nav_item a{
+color: #fff;
+text-decoration: none;
+font-weight:bold;
+font-size: 20px;
+text-shadow: 1px 1px 2px #696969;
+}
+li a:hover{
+text-decoration: underline #edbfff;
+}
+
+/* позиционирование телефонов
+.header-slider_image-wrapper{
+background: url('../img/iPhone-back.png') 5% no-repeat;
+width: 280px;
+padding-left: 82px;
+} */
+
+.header-slider_wrapper{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 400px;
+}
+.header-slider_image-wrapper{
+  float: right;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  }
+.header-slider_image{
+position:absolute;
+}
+.header-slider_image--back{
+/* position:absolute; */
+  top: 70px;
+  left: 120px;
+}
+
+.header-slider_image--front{
+  /* top: -20px; */
+  left: 200px;
+}
+
+.header-slider_text{
+  width: 700px;
+  padding-top: 75px;
+}
+.header-slider_title{
+  font-size: 60px;
+  color: #fff;
+}
+.header-slider_subtitle{
+  font-size: 30px;
+  font: arial narrow;
+  color: #edbfff;
+}
+.header-slider_description{
+  font-size: 18px;
+  color: #c3bfbf;
+}
+/* стиль иконок dots слайдера */
+.header-slider_wrapper .slick-dots{
+  width: 300px;
+  bottom: -50px;
+  right: 0;
+}
+
+.header-slider_wrapper .slick-dots button{
+background-color: rgba(0, 0, 0, 0.3);
+width: 15px;
+height: 15px;
+border-radius: 50%;
+position: relative;
+}
+
+.header-slider_wrapper .slick-dots li.slick-active button:before{
+background-color: rgba(255, 255, 255, 0.1);
+width: 11px;
+height: 11px;
+border-radius: 50%;
+position: absolute;
+top: 2px;
+left: 2px;
+}
+.header-slider_wrapper .slick-dots li.slick-active button:before{
+content: "";
+}
+/* стиль иконок arrow слайдера */
+.header-slider{
+  position: relative;
+}
+
+.header-slider .header-slider_arrow{
+background-color: transparent;
+color: #fff;
+border: none;
+width: 50px;
+height: 50px;
+position: absolute;
+top: 50%;
+font-size: 28px;
+transform: translateY(-50%);
+}
+
+.header-slider .header-slider_arrow--left {
+position: absolute;
+left: 60px;
+}
+.header-slider .header-slider_arrow--right {
+right: 60px;
+}
+
+
+
+.content-personal{
+background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#755882+0,33263a+100 */
+background: #755882; /* Old browsers */
+background: -moz-linear-gradient(top, #755882 0%, #33263a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #755882 0%,#33263a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #755882 0%,#33263a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#755882', endColorstr='#33263a',GradientType=0 ); /* IE6-9 */
+height: 340px;
+}
+div .column{
+  display: flex;
+  justify-content: space-between;
+  height: 270px;
+  }
+.column-first > div,
+.column-second > div,
+.column-third > div{
+  display: inline-block;
+  padding-top: 85px;
+    }
+.img-wrapper{
+  padding: 0 20px 0 10px;
+  float: left;
+  }
+.item_wrapper{
+width: 320px;
+float: right;
+padding-right: 55px;
+color: #fff;
+}
+.column-third .item_wrapper{
+  width: 267px;
+  padding-right:0;
+}
+
+div .title{
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.item_wrapper .title{
+font-size: 20px;
+margin-bottom: 10px;
+}
+.item_wrapper .data{
+font-size: 21px;
+color: #a9a9a9;
+}
+div .title a{
+display: block;
+font-size: 15px;
+float: right;
+text-decoration: none;
+padding: 10px 20px 0 0;
+font-weight:bold;
+}
+.item_wrapper a{
+color: #fff;}
+
+.content-common{
+background:rgb(245, 245, 245);
+height: 610px;
+}
+.content-common_wrapper{
+padding-top: 100px;
+}
+
+.content-common_wrapper{
+  position: relative;
+}
+
+
+.content-common_wrapper .left-column,
+.content-common_wrapper .right-column{
+display: inline-block;
+width:50%;
+height: 380px;
+float: left;
+}
+
+.left-column{
+  background: url('../img/quote.png') no-repeat;
+  background-position: 30px 0;
+    }
+.content-common .img-wrapper{
+  padding-top: 20px;
+}
+.left-column .item_wrapper{
+  width:520px;
+  padding:40px 150px 0 0;
+}
+.left-column .item-color{
+padding-left: 10px;
+font-size: 20px;
+color: #edbfff;
+}
+.left-column .item-black,
+.right-column p,
+.right-column .subtitle{
+  font-size: 20px;
+  padding-top: 30px;
+  color: #454545;
+}
+
+  .right-column .first-block,
+  .right-column .second-block,
+  .right-column .third-block{
+  display: inline-block;
+}
+.right-column .img-wrapper{
+  float: left;
+}
+.right-column .item_wrapper{
+  float: right;
+  width: 500px;
+
+}
+
+
+.content-common a{
+  display: block;
+  font-size: 15px;
+  color: #454545;
+}
+
+
+hr {
+color: #AFEEEE;
+  width: 100%;
+  size: 5px;
+}
+
+.logos{
+display: block;
+padding-top: 30px;
+margin: auto;
+
+}
+.content-information{
+background:#ececec;
+height: 400px;
+}
+.content-information_wrapper{
+padding-top: 100px;
+}
+
+.left-block_wrapper,
+.midle-block_wrapper{
+  width: 34%;
+  display: inline-block;
+  float: left;
+  padding-right: 60px;
+  height: 165px;
+}
+.content-information .title{
+  font-size: 20px;
+  color: #454545;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.content-information .data{
+  font-size: 22px;
+  color: #a9a9a9;
+  padding-top: 15px;
+}
+.content-information .logo-black{
+font-size: 38px;
+color: #454545;
+text-transform: uppercase;
+font-weight: bold;
+}
+.content-information .logo-pink{
+  font-size: 38px;
+  color: #edbfff;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.copyright{
+  font-size: 15px;
+  font-style: italic;
+  color: #b9adac;
+  padding: 15px 0 15px 0;
+}
+
+.footer{
+height: 186px;
+background: url('../img/last_bg.png') no-repeat;
+background-position: top center;
+background-size: cover;
+}
+
+.footer-nav{
+height: 186px;
+inline-height: 186px;
+}
+ .footer-nav_wrapper{
+ padding-top: 80px;
+}
+
+.footer-nav_item {
+float:left;
+margin-right: 10px}
+
+.footer-nav_item a{
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+text-shadow: 1px 1px 2px #696969;
+}
+.footer-nav_item:last-child{
+  float: right;
+}
