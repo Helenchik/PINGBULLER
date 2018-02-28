@@ -73,10 +73,23 @@ width: 280px;
 padding-left: 82px;
 } */
 
-.header-slider_wrapper{
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 400px;
+.header-slider{
+position: relative;
+height: 400px;
 }
+
+.header-slider_wrapper{
+  margin-top: 70px;
+  position: relative;
+  }
+.slider-background{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  height: 400px;
+  width: 100%;
+  }
+
 .header-slider_image-wrapper{
   float: right;
   position: relative;
@@ -87,13 +100,13 @@ padding-left: 82px;
 position:absolute;
 }
 .header-slider_image--back{
-/* position:absolute; */
-  top: 70px;
+  top: 50px;
   left: 120px;
+/* left: 120px; */
 }
 
 .header-slider_image--front{
-  /* top: -20px; */
+  top:  0px;
   left: 200px;
 }
 
@@ -159,14 +172,13 @@ transform: translateY(-50%);
 }
 
 .header-slider .header-slider_arrow--left {
-position: absolute;
-left: 60px;
+left: -60px;
 }
 .header-slider .header-slider_arrow--right {
-right: 60px;
+right: -60px;
 }
-
-
+.header-slider .header-slider_arrow:active{
+  border: none;}
 
 .content-personal{
 background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#755882+0,33263a+100 */
@@ -251,6 +263,7 @@ float: left;
 .left-column{
   background: url('../img/quote.png') no-repeat;
   background-position: 30px 0;
+
     }
 .content-common .img-wrapper{
   padding-top: 20px;
@@ -271,6 +284,37 @@ color: #edbfff;
   padding-top: 30px;
   color: #454545;
 }
+.second-slider {
+  height: 315px;
+}
+
+.second-slider .slick-dots{
+  width: 100px;
+  bottom: -15px;
+  right:316px;
+}
+
+.second-slider .slick-dots button{
+background-color: rgba(255, 255, 255, 0.1);
+width: 15px;
+height: 15px;
+border-radius: 50%;
+position: relative;
+}
+
+.header-slider .slick-dots li.slick-active button:before{
+background-color:rgba(0, 0, 0, 0.3) ;
+width: 11px;
+height: 11px;
+border-radius: 50%;
+position: absolute;
+top: 2px;
+left: 2px;
+}
+.header-slider .slick-dots li.slick-active button:before{
+content: "";
+}
+
 
   .right-column .first-block,
   .right-column .second-block,
@@ -382,3 +426,29 @@ text-shadow: 1px 1px 2px #696969;
 .footer-nav_item:last-child{
   float: right;
 }
+@media all and (max-width: 1200px) {
+	.container {
+		width: 978px;
+		min-width: 978px;
+	}
+}
+
+@media all and (max-width: 978px) {
+	.container {
+		width: 768px;
+		min-width: 768px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.container {
+		width: 540px;
+		min-width: 540px;
+	}
+}
+
+@media all and (max-width: 540px) {
+	.container {
+		width: 320px;
+		min-width: 320px;
+	}
