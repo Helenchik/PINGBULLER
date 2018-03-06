@@ -59,11 +59,13 @@ padding-top: 15px;
 color: #fff;
 text-decoration: none;
 font-weight:bold;
+text-transform: uppercase;
 font-size: 20px;
 text-shadow: 1px 1px 2px #696969;
 }
-li a:hover{
-text-decoration: underline #edbfff;
+li a:hover span,
+li a:focus span{
+border-bottom: 2px solid #edbfff;
 }
 
 /* позиционирование телефонов
@@ -71,16 +73,17 @@ text-decoration: underline #edbfff;
 background: url('../img/iPhone-back.png') 5% no-repeat;
 width: 280px;
 padding-left: 82px;
-} */
+}
 
 .header-slider{
 position: relative;
 height: 400px;
-}
+}*/
 
 .header-slider_wrapper{
   margin-top: 70px;
   position: relative;
+  height: 400px;
   }
 .slider-background{
   position: absolute;
@@ -156,7 +159,7 @@ content: "";
 }
 /* стиль иконок arrow слайдера */
 .header-slider{
-  position: relative;
+position: relative;
 }
 
 .header-slider .header-slider_arrow{
@@ -327,10 +330,7 @@ content: "";
 .right-column .item_wrapper{
   float: right;
   width: 500px;
-
 }
-
-
 .content-common a{
   display: block;
   font-size: 15px;
@@ -386,7 +386,7 @@ font-weight: bold;
 }
 .content-information .logo-pink{
   font-size: 38px;
-  color: #edbfff;
+  color: #a8a8a8;
   padding-bottom: 15px;
   text-transform: uppercase;
   font-weight: bold;
